@@ -8,7 +8,7 @@ connectDb();
 app.use(express.json());
 
 app.use("/api/contacts", require("./routes/contactRoutes")); // middleware
-
+app.use("/api/users", require("./routes/userRoutes"))
 //error handler middleware
 
 app.use(errorHandler);
